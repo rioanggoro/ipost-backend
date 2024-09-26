@@ -13,6 +13,15 @@ app.use('/users', userRoutes);
 const postRoutes = require('./backend/routes/postRoutes');
 app.use('/posts', postRoutes);
 
+const likeRoutes = require('./backend/routes/likeRoutes');
+app.use('/likes', likeRoutes);
+
+const commentRoutes = require('./backend/routes/commentRoutes');
+app.use('/comments', commentRoutes);
+
+const categoryRoutes = require('./backend/routes/categoriesRoutes');
+app.use('/categories', categoryRoutes);
+
 // // Base route
 // app.get('/', (req, res) => {
 //   res.send('Hello World!');
